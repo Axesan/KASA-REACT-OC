@@ -1,0 +1,41 @@
+footer{
+    background-color: black;
+    padding:60px;
+    text-align: center;
+    
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+
+
+ .footer_reserved{
+    color: #FFF;
+    font-size: 25px;
+ }
+ h1{
+    text-align: center;
+ }
+}
+.logo{
+    display: flex;
+    
+    padding-left: 40px;
+    color:#FFF;
+    align-items: center;
+   
+    >span{
+        padding-left: 5px;
+        padding-right: 5px ;
+    }
+    >svg{
+        width: 50px;
+    }
+ 
+}
+
+// Format telephone
+@media only screen and (max-width: 480px) {
+  footer>p{
+        font-size: 15px  !important;
+  }
+}

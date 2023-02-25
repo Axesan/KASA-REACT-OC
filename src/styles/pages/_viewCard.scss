@@ -1,0 +1,300 @@
+// .view-card{
+//     div{    
+//         h3{
+//             color: #FF6060;
+//             font-weight: bold;
+//             font-size: 36px;
+//             line-height: 142.6%;
+//         }
+//         .location-host-views{
+//             color: #FF6060;
+//             display: flex;
+//             justify-content: space-between;
+//             align-items: center;
+//             .profile-contend{
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: space-around;
+
+//             }
+//         }
+//         .profile{
+//             border-radius: 50%;
+//             width: 25%;
+//             object-fit: cover;
+//         }
+//     }
+//     .badge-contend{
+//         margin-top: 25px;
+//         margin-bottom: 25px;
+//         display: flex;
+//         justify-content: space-between;
+//         flex-wrap: wrap;
+//         .badge-items{
+//             background: #000;
+//             background-color: #FF6060;
+//             padding: 5px;
+//             border-radius: 10px;
+//             font-size: small;
+//             color: #fff;
+//             margin-left: 10px;
+//         }
+//     }
+//     .infos-logement{
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-between;
+//     .card-description{
+//         width: 40%;
+//         padding: 5px;
+//         border-radius: 10px;
+//     }
+//     .card-equipement{
+//         width: 50%;
+//         padding: 5px;
+//         border-radius: 10px;
+//     }
+//     .header-card{
+//         color: #fff;
+//         font-weight:500;
+//         font-size: medium;
+//         display: flex;
+//         justify-content: space-between;
+//         cursor: pointer;
+//         padding:10px;
+//         border-radius: 10px;
+//         border: #FF6060 1px solid;
+//         background: #FF6060;
+        
+//     }
+//     .contend-card{
+//         padding: 10px;
+//         color: #FF6060;
+//         background-color: #F7F7F7;
+//         border-radius: 10px;
+//         ul{
+//             list-style: none;
+//             padding: 0;
+            
+//             li{
+                
+//             }
+//         }
+//     }
+//     }
+// }
+
+//Icone 
+.icon {
+    color: #FF6060;
+}
+.icon-regular{
+    color:#E3E3E3;
+    
+}
+
+
+
+.contend_title_star{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    // Badge
+    .badge-tags{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 20px;
+    >.badge-items{
+        background-color: #ff6060;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 14px;
+        margin-right: 10px;
+        min-width: 50px;
+        padding: 9px 20px;
+        text-align: center;
+    }
+    }
+
+    .title{
+        width: 100%;
+        >div{
+           
+            color: #FF6060;
+        }
+    }
+    .bloc_profile{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        .badge-star{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+        }
+    }
+    .profile-contend{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        >span{
+            color: #FF6060;
+            font-weight: 500;
+        }
+        >img{
+            border-radius: 50%;
+            height: 64px;
+            width: 64px;
+        }
+    }
+}
+
+
+//Infos logements 
+
+.infos-logement{
+    display: flex;
+    justify-content: space-between;
+   
+    flex-direction: row;
+    margin-top: 30px;
+    width: 100%;
+        .header-card{
+        color: #fff;
+        font-weight:500;
+        font-size: medium;
+        cursor: pointer;
+        padding:15px;
+        border-radius: 10px;
+        border: #FF6060 1px solid;
+        background: #FF6060;
+        display: flex;
+        justify-content: space-between;
+    }
+    .card-description{
+        width: 40%;
+    }
+    .card-equipement{
+        width: 40%;
+        
+    }
+
+
+    .contend-card{
+        padding: 10px;
+        color: #FF6060;
+        background-color: #F7F7F7;
+        border-radius: 10px;
+
+        ul{
+            list-style: none;
+            padding: 0;
+            
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Dropdown 
+
+.fade-in {
+    animation: fade-in 0.5s;
+  }
+  
+  .fade-out {
+    animation: fade-out 0.5s;
+  }
+  
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fade-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+
+
+
+
+  // Format telephone
+@media only screen and (max-width: 480px) {
+
+
+
+    .contend_title_star{
+        flex-direction: column !important;
+        .badge-tags{
+            .badge-items{
+                min-width: 0;
+            }
+        }
+       
+    }
+
+
+    .bloc_profile{
+        flex-direction: row-reverse !important;
+        justify-content: space-between !important;
+        width: 100% !important;
+        margin-top: 15px;
+        .profile-contend{
+            >span{
+                padding-right: 15px;
+            }
+        }
+       
+
+    }
+
+    .infos-logement{
+        flex-direction: column;
+        .card-description{
+            width: 100%;
+        }
+        .card-equipement{
+            width: 100%;
+            margin-top: 15px;
+        }
+    }
+.badge-items{
+    font-size: 10px !important;
+    padding: 9px 10px !important;
+    
+}
+}
