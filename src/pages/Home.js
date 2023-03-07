@@ -8,43 +8,40 @@ const home = () => {
 const BannerCover = ImgHome;
 const BannerTitle = "Chez vous, partout et ailleurs"
 
-// une variable pour enregistrer ma données 
+// Une variable pour enregistrer mes données 
 const DataCard = Data
 
 
 //  affichage de mes card 
 const addCard = () => {	
 	let allCard = [];
-	
+	// Boucles for 
 	for (const cardInfo of DataCard) {
 	
-    allCard.push(
-      
-      <Card title={cardInfo.title} picture={cardInfo.cover} id={cardInfo.id} key={cardInfo.id}/>
-    );
+		allCard.push(
+		<Card title={cardInfo.title} picture={cardInfo.cover} id={cardInfo.id} key={cardInfo.id}/>
+		);
 	}
-	
 	return allCard;
 };
  
 return (
 	<div>
-    <section>
-		  <Banner cover={BannerCover} title={BannerTitle}/>
-    </section>
-		<div  className="container">
+		{/* BANNER */}
+		<section>
+			<Banner cover={BannerCover} title={BannerTitle}/>
+		</section>
 
-		
-<section>
-    <div className="contend_card">
-		    {addCard()}
-    </div>
-    </section>
-
+		{/* Contend Card */}
+		<div className="container">
+			<section>
+				<div className="contend_card">
+						{addCard()}
+				</div>
+			</section>
 		</div>
 	</div>
 );
-
 };
 
  

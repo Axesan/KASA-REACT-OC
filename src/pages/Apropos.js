@@ -1,6 +1,5 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState } from 'react';
 import Bannerapropos from './../components/Bannerapropos';
-import Data from '../data/data.json'
 import { faChevronDown,faChevronUp } from'@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ImgApropos from "./IMG/banner-Apropos.png"
