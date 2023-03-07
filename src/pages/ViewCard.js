@@ -1,14 +1,13 @@
-/* eslint-disable react-hooks/rules-of-hooks */
-import React, { useState } from 'react';
+import React from 'react';
 import Caroussel from '../components/Caroussel';
 import { useParams } from 'react-router-dom';
 import Data from "../data/data.json";
 import NotFound from './NotFound';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faChevronUp,faChevronDown ,faStar as solidStarIcone} from '@fortawesome/free-solid-svg-icons';
+import {faStar as solidStarIcone} from '@fortawesome/free-solid-svg-icons';
+import {faStar as regularStarIcone} from '@fortawesome/free-regular-svg-icons';
 
-
-import { faStar as regularStarIcone} from '@fortawesome/free-regular-svg-icons';
+import Dropdown from '../components/Dropdown';
 const ViewCard = () => {
    
     // Recuperation de notre ID de produits (GET)
@@ -27,11 +26,9 @@ const ViewCard = () => {
         const TAGS = [];
         const ImgCarrousel = [];
 
-
-
-        equipments.forEach((data)=>{
-            EQUIPMENT.push(<li key={data}>{data}</li>)
-        })
+        EQUIPMENT.push(
+              <ul>{equipments.map((data) => <li key={data}>{data}</li>)}</ul>            
+          );
 
        tags.forEach((data)=>{
         TAGS.push(<span className='badge-items' key={data}>{data}</span>)
@@ -52,17 +49,9 @@ const ViewCard = () => {
       
 
 
-       //Dropdown
-       const [isDropdownVisible, setIsDropdownVisible] = useState(false);
-       const [isDropdown2Visible, setIsDropdown2Visible] = useState(false);
+      
 
-        const toggleDropdown = () => {
-            setIsDropdownVisible(!isDropdownVisible);
-        }
-       
-        const toggleDropdown2 = () => {
-            setIsDropdown2Visible(!isDropdown2Visible);
-        }
+   
         
         return (
             <div>
@@ -72,10 +61,7 @@ const ViewCard = () => {
                     
                         <Caroussel paginate={ImgCarrousel.length}>
                             {/* BOUCLES SUR LES IMAGES UTILISATION DE FOREACH */}
-            
                             {ImgCarrousel}
-                        
-                        
                         </Caroussel> 
                     </div>
                 </section>
@@ -118,24 +104,10 @@ const ViewCard = () => {
                     <section>
                         <div className="infos-logement">
                             <div className="card-description">
-                                <div className={"header-card"} id='card-header' onClick={toggleDropdown}>
-                                    <span>Descriptions</span>
-                                    {isDropdownVisible ?  <FontAwesomeIcon icon={faChevronUp} /> : <FontAwesomeIcon icon={faChevronDown} />}
-                                </div>
-                                <div className={`contend-card ${isDropdownVisible ? 'fade-in' : 'fade-out hidden'}`} id='card-contend'>
-                                    {description}
-                                </div>
+                                <Dropdown title="Descriptions" descriptions={description}  numberDropdown={1} />  
                             </div>
                             <div className="card-equipement">
-                                <div className="header-card"  onClick={toggleDropdown2} >
-                                    <span>Equipement</span>
-                                    {isDropdown2Visible ?  <FontAwesomeIcon icon={faChevronUp} /> : <FontAwesomeIcon icon={faChevronDown} />}
-                                </div>
-                                <div className={`contend-card ${isDropdown2Visible ? 'fade-in' : 'fade-out hidden'}`} id='dropdown'>
-                                    <ul>
-                                        {EQUIPMENT}
-                                    </ul>
-                                </div>
+                                <Dropdown title="Equipements" descriptions={EQUIPMENT}  numberDropdown={1} />
                             </div>
                         </div>
                     </section>

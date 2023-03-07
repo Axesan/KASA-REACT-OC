@@ -9,6 +9,19 @@
     margin-right: 95px;
     height: 223px;
 }
+
+.banner-apropos{
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url('../../pages/IMG/banner-Apropos.png');
+    border-radius: 25px;
+    background-size: cover;
+    margin-bottom: 25px;
+    margin-left: 95px;
+    margin-right: 95px;
+    height: 223px;
+  
+}
 // .banner > img{
 //     position: absolute;
 //     width: 87%;
@@ -42,6 +55,14 @@
         font-size: 24px;
         padding-left:10px ;
 
+    }
+
+
+    // apropos 
+    .banner-apropos{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
     }
   
 }

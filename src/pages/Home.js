@@ -29,7 +29,7 @@ return (
 	<div>
 		{/* BANNER */}
 		<section>
-			<Banner cover={BannerCover} title={BannerTitle}/>
+			<Banner classPicture="banner" title={BannerTitle}/>
 		</section>
 
 		{/* Contend Card */}
