@@ -19,17 +19,17 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  
   <BrowserRouter>
-
-   <main>
+   
    <Navigation/>
+   <main>
       <Routes>
-        <Route   activeClassName="active" path="/" element={<Home />}/>
+        <Route activeClassName="active" path="/" element={<Home />}/>
         <Route activeClassName="active" path="/a-propos" element={<Apropos />}/>
         <Route path="/views/:title/:id"  element={<ViewCard/>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-    <Footer/>
     </main>
+    <Footer/>
 
     </BrowserRouter>
 );

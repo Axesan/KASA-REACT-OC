@@ -27,9 +27,8 @@ const ViewCard = () => {
         const ImgCarrousel = [];
 
         EQUIPMENT.push(
-              <ul>{equipments.map((data) => <li key={data}>{data}</li>)}</ul>            
+            <ul key={`equipments-${Data.id}`}>{equipments.map((data,item) => <li key={`myList-${data}`}>{data}</li>)}</ul>            
           );
-
        tags.forEach((data)=>{
         TAGS.push(<span className='badge-items' key={data}>{data}</span>)
        })
@@ -125,5 +124,5 @@ const ViewCard = () => {
   
 };
 
-console.clear();
+
 export default ViewCard;
