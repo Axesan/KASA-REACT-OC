@@ -16,8 +16,7 @@
     display: flex;
     align-items: center;
     background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url('../../pages/IMG/banner-Apropos.png');
-    border-radius: 25px;
-    
+    border-radius: 25px;    
     margin-bottom: 25px;
     margin-left: 95px;
     margin-right: 95px;
@@ -25,7 +24,6 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-position-y: center;
-  
 }
 
 .banner > h1{
@@ -33,13 +31,7 @@
     margin-left: auto;
     margin-right: auto;
     color: #fff;
- 
- 
-    
 }
-
-
-
 
 @media only screen and (max-width:1024px){
     .banner{
