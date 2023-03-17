@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet, NavLink } from "react-router-dom";
 const Navigation = () => {
-  // Variable link (A revoir : mettre dans un tableau ? )
+  
   const linkAccueil = "/";
   const linkApropos = "/a-propos";
   return (
