@@ -73,14 +73,22 @@ const Caroussel = (props) => {
     return (
         <div className="carousel-container">
             <div className="carousel-wrapper" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
-                <FontAwesomeIcon icon={faChevronLeft} className="left-arrow" onClick={prev} />
+                {length > 1?
+                    <FontAwesomeIcon icon={faChevronLeft} className="left-arrow" onClick={prev}  />
+                    :""
+                }
                 <div className="carousel-content-wrapper" >
                     <div className="carousel-content" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                         {children}
                     </div>
+                   
                     <span>{currentIndex + 1} / {props.paginate}</span>
+                 
                 </div>
-                <FontAwesomeIcon icon={faChevronRight} className="right-arrow" onClick={next} />
+                {length > 1?
+                    <FontAwesomeIcon icon={faChevronRight} className="right-arrow" onClick={next} />
+                    :null
+                }
             </div>
         </div>
     );

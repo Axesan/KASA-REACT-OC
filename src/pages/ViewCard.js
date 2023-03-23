@@ -38,18 +38,10 @@ const ViewCard = () => {
 
        })
 
-
-
        // Show card       
        const NoteUser = rating;
        const star = [regularStarIcone,regularStarIcone,regularStarIcone,regularStarIcone,regularStarIcone]
        const result = star.fill(solidStarIcone ,0,NoteUser)
-  
-      
-
-
-      
-
    
         
         return (
@@ -65,10 +57,7 @@ const ViewCard = () => {
                     </div>
                 </section>
 
-                <div className='container view-card'>
-               
-
-             
+                <div className='container view-card'>             
                     <section className='contend_title_star'>
                         <div className="title">
                             <div>
@@ -99,7 +88,6 @@ const ViewCard = () => {
 
                     
                     </section>
-
                     <section>
                         <div className="infos-logement">
                             <div className="card-description">
@@ -109,10 +97,7 @@ const ViewCard = () => {
                                 <Dropdown title="Equipements" descriptions={EQUIPMENT}  numberDropdown={1} />
                             </div>
                         </div>
-                    </section>
-    
-              
-              
+                    </section>             
                 </div>
             </div>
         );

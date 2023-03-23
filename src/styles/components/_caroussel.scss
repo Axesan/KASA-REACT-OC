@@ -78,10 +78,7 @@
 
 // on cache les boutons pour le format mobile
 @media (hover: none) and (pointer: coarse) {
-    .left-arrow, .right-arrow {
-        display: none;
-      
-    }
+ 
     .carousel-content-wrapper{
         >span{
             display: none;

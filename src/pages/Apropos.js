@@ -1,15 +1,13 @@
 import React from 'react';
 import Banner from './../components/Banner';
-import ImgApropos from "./IMG/banner-Apropos.png"
 import Dropdown from './../components/Dropdown';
 const Apropos = () => {
-    const BannerCover = ImgApropos
-    const BannerTitle = "Chez vous, partout et ailleurs"
+   
     return (
         <div >
       
                 <section>
-                    <Banner title="" classPicture='banner-apropos'/>
+                    <Banner title='' classPicture='banner-apropos'/>
                 </section>
         <div className="container">
                 <div className="card-apropos">

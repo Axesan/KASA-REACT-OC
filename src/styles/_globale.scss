@@ -1,80 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-body{
-    font-family: 'Montserrat';
-    width: 80%;
-    margin: auto;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+body {
+  font-family: "Montserrat";
+  width: 80%;
+  margin: auto;
 }
-main{
-    margin-bottom: 25px;
-}
-
-.hidden{
-    display:none;
-    visibility: hidden;
-}
-.visible{
-    display: block;
-    visibility: visible;
+main {
+  margin-bottom: 25px;
 }
 
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+.visible {
+  display: block;
+  visibility: visible;
+}
 
-// ------ RESPONSIVE --------  
+// ------ RESPONSIVE --------
+
+// Format tablette
+@media only screen and (max-width: 1024px) {
+  // --- Pages ---
+  // Error 404
+
+  .content_not_found {
+    h1 {
+      font-size: 198px !important;
+    }
+  }
+  // --- Components ---
+
+  // Banner
+  .banner {
+    height: 150px !important;
+
+    > h1 {
+      font-size: xx-large !important;
+      padding-left: 10px;
+    }
+  }
+  .banner-apropos {
+    height: 150px !important;
+  }
+  //footer 
+  // footer
+  .footer_reserved {
+    color: #fff;
+    font-size: 15px !important;
+  }
+}
+
+// Format telephone
+@media only screen and (max-width: 480px) {
+  body {
+    width: 94%;
+  }
+  // --- Pages ---
+  
+  // Error 404
+  .content_not_found {
+    h1 {
+      font-size: 188px !important;
+    }
+    > span {
+      font-size: 28px !important;
+    }
+  }
 
 
-
-// Format tablette 
-@media only screen and (max-width:1024px){
-   // --- Pages --- 
-   // Home 
-   // A propos
-   // View - Card
-   // Error 404 
-   // --- Components --- 
-
+  // View Card 
+  .contend_title_star{
+    flex-direction: column !important;
+    .badge-tags{
+        .badge-items{
+            min-width: 0;
+        }
+    }
    
-   // Banner
-   .banner{
-       height:150px !important;
-       
-       >h1{
-           font-size: x-large !important;
-           padding-left: 10px;
-        }
-       }
-       .banner-apropos{
-           height:150px !important;
-        }
-        
-        
-    }
+}
 
-    // Format telephone
-    @media only screen and (max-width: 480px) {
 
-        body{
-            width: 94%;
+.bloc_profile{
+    flex-direction: row-reverse !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    margin-top: 15px;
+    .profile-contend{
+        >span{
+            padding-right: 15px;
         }
-    // --- Pages --- 
-    // Home 
-    // A propos
-    // View - Card
-    // Error 404 
-    // --- Components ---   
+    }
+   
 
-    
-    // Navigation
-   .nav_link{
-        font-size: 15px !important;
+}
+
+.infos-logement{
+    flex-direction: column;
+    .card-description{
+        width: 100%;
     }
-   // Banner
-    .banner{
-        height:150px !important;
+    .card-equipement{
+        width: 100%;
+        margin-top: 15px;
     }
-    .banner-apropos{
-        height:150px !important;
-    }
-    // Carouseel 
-    .carousel-container{
-        width: 100% !important;
-    }
+}
+.badge-items{
+font-size: 10px !important;
+padding: 9px 10px !important;
+
+}
+  // --- Components ---
+
+  // Navigation
+  .nav_link {
+    font-size: 15px !important;
+  }
+  // Banner
+  .banner {
+    height: 150px !important;
+  }
+  .banner-apropos {
+    height: 150px !important;
+  }
+  // Carouseel
+  .carousel-container {
+    width: 100% !important;
+  }
+
+  
 }
