@@ -16,11 +16,10 @@ footer{
     text-align: center;
  }
 }
-.logo{
+.logo-footer{
     display: flex;
-    
     padding-left: 40px;
-    color:#FFF;
+    color:#FFF  !important;
     align-items: center;
    
     >span{
@@ -36,11 +35,5 @@ footer{
 
 
 
-// Format telephone
-@media only screen and (max-width: 480px) {
-  footer>p{
-        font-size: 15px  !important;
-  }
 
-}
 

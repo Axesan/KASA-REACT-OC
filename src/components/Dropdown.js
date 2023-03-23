@@ -8,6 +8,8 @@ function Dropdown  (props)  {
    
         const toggleDropdown = (index) => {
             setIsDropdownVisible({
+              //L'opérateur spread '...' est utilisé pour copier toutes les propriétés de l'objet isDropdownVisible
+              // Equivalent a True False
               ...isDropdownVisible,
               [`dropdown${index}`]: !isDropdownVisible[`dropdown${index}`]
             });

@@ -27,7 +27,7 @@ const ViewCard = () => {
         const ImgCarrousel = [];
 
         EQUIPMENT.push(
-            <ul key={`equipments-${Data.id}`}>{equipments.map((data,item) => <li key={`myList-${data}`}>{data}</li>)}</ul>            
+            <ul key={`equipments-${Data.id}`}>{equipments.map((data) => <li key={`myList-${data}`}>{data}</li>)}</ul>            
           );
        tags.forEach((data)=>{
         TAGS.push(<span className='badge-items' key={data}>{data}</span>)
@@ -56,7 +56,7 @@ const ViewCard = () => {
             <div>
                  {/* Carrousel */}
                  <section>
-                    <div style={{ maxWidth: 1200, marginLeft: 'auto', marginRight: 'auto'}}>
+                    <div>
                     
                         <Caroussel paginate={ImgCarrousel.length}>
                             {/* BOUCLES SUR LES IMAGES UTILISATION DE FOREACH */}

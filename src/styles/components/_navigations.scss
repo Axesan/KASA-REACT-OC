@@ -1,48 +1,26 @@
 header{
-nav{
     display: flex;
     justify-content: space-between;
-    margin-right: 55px;
-    margin-left: 55px;
-    font-size: 20px;
     align-items: center;
-  
-   
     ul{
         display: flex;
-        list-style-type: none;
-        padding-right: 40px;
-        li{
-            padding-right: 15px;
-        }
-    }
-    // LOGO
-    .logo{
-       
-        width: 120px;
-        padding-left: 40px;
-        color:#FF6060;
-        font-size: 35px;
+        justify-content: space-around;
         
-        >span{
-            padding-left: 5px;
-            padding-right: 5px ;
+        li{
+            list-style: none;
         }
-        >svg{
-            color:#FF6060;
-            width: 50px;
-        }
-     
+        
     }
-     // EO LOGO
-    .nav_link{
-        text-decoration: none;
-        color:#FF6060;
-        margin-left: 10px;
-    }
- 
 }
+
+.nav_link{
+    text-decoration: none;
+    color: #FF6060;
+    margin-left: 15px;
+    font-style: normal;
+    font-size: 20px;
 }
+
 .active{
     border-bottom: 2px solid #FF6060;
     padding-bottom: 5px;
@@ -52,32 +30,21 @@ nav{
     border-bottom: 2px solid #FF6060;
 }
 
-@media only screen and (max-width:1024px){
-    header{
-        width: 100%;
-        
-    nav{
-     width: 100%;   
-     font-size: 16px;
-     margin-left: 0;
-     ul{
-        padding-right: 0;
-        padding-left: 0;
-     }
-    
-     h1{
-        svg{
-            width: 25px !important;
-            
-        }
-     }
+ // LOGO
+ .logo{       
+    width: 120px;
+    padding-left: 0px;
+    color:#FF6060;
+    font-size: 35px;
+    display: flex;
+    align-items: center;    
+    >span{
+        padding-left: 5px;
+        padding-right: 5px ;
     }
+    >svg{
+        color:#FF6060;
+        width: 50px;
     }
-    .logo{
-        font-size: 25px !important;
-    }
-}
-// Format telephone
-@media only screen and (max-width: 480px) {
-    
+ 
 }

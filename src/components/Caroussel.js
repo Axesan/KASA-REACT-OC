@@ -8,6 +8,8 @@ const Caroussel = (props) => {
     const [currentIndex, setCurrentIndex] = useState(0)
     const [length, setLength] = useState(children.length)
 
+    // Il permet d'exécuter une fonction à chaque fois que le composant est rendu ou lorsqu'une propriété spécifique a été modifiée.
+    // Utilisé pour effectuer des opérations telles que la mise à jour de l'état
     useEffect(() => {
         setLength(children.length)
     }, [children])

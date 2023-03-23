@@ -6,7 +6,7 @@ const Footer = () => {
         <footer>
            
          
-                <h1 className="logo">
+                <h1 className="logo-footer">
                     <span>K</span>
                     <svg width="47" height="54" viewBox="0 0 47 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <svg width="47" height="54" viewBox="0 0 47 54" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -21,4 +21,4 @@ Add caroussel from pages 'home' create files :
         <img src={mydata}>
 </Banner>
 ```
-
+**RESPONSIVE** File **_global.scss**

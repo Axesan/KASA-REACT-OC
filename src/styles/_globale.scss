@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 body{
     font-family: 'Montserrat';
+    width: 80%;
+    margin: auto;
 }
-.container{
-    width: calc(100% - 40px);
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 70px;
-
+main{
+    margin-bottom: 25px;
 }
 
 .hidden{
@@ -21,4 +18,63 @@ body{
 }
 
 
+// ------ RESPONSIVE --------  
+
+
+
+// Format tablette 
+@media only screen and (max-width:1024px){
+   // --- Pages --- 
+   // Home 
+   // A propos
+   // View - Card
+   // Error 404 
+   // --- Components --- 
+
+   
+   // Banner
+   .banner{
+       height:150px !important;
+       
+       >h1{
+           font-size: x-large !important;
+           padding-left: 10px;
+        }
+       }
+       .banner-apropos{
+           height:150px !important;
+        }
+        
+        
+    }
+
+    // Format telephone
+    @media only screen and (max-width: 480px) {
+
+        body{
+            width: 94%;
+        }
+    // --- Pages --- 
+    // Home 
+    // A propos
+    // View - Card
+    // Error 404 
+    // --- Components ---   
+
     
+    // Navigation
+   .nav_link{
+        font-size: 15px !important;
+    }
+   // Banner
+    .banner{
+        height:150px !important;
+    }
+    .banner-apropos{
+        height:150px !important;
+    }
+    // Carouseel 
+    .carousel-container{
+        width: 100% !important;
+    }
+}

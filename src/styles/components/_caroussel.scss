@@ -1,11 +1,10 @@
 
 .carousel-container {
-    width: 1240px;
     display: flex;
-    
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+    width:100%;
 }
 
 .carousel-wrapper {
@@ -87,39 +86,5 @@
         >span{
             display: none;
         }
-    }
-
-
-
-   
+    }   
 }
-
-
-// Format Tablette 
-
-@media only screen and (max-width:1024px){
-    .carousel-container{
-        width: 90% !important;
-     
-        .carousel-content{
-            
-            >img{
-                height: 225px !important;
-            }
-        }
-    }
-}
-// Format Télephone
-@media only screen and (max-width: 480px) {
-    .carousel-container{
-        width: 90% !important;
-     
-        .carousel-content{
-            
-            >img{
-                height: 225px !important;
-            }
-        }
-    }
-}   
-
