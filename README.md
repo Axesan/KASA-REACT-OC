@@ -84,7 +84,7 @@ Components is called :
 <Footer/>
 ```
 ---
-# - Navigation 
+## - Navigation 
 Locate File in 'components/Navigation.js'\
 Components is called : 
 ```js
@@ -94,11 +94,11 @@ Components is called :
 # STYLE DESIGN 
 
 ## Style Locate 
-*src/styles* 
+* src/**styles** 
 ## Style Components
-*src/styles/components* 
+* src/styles/**components** 
 ## Style  Pages 
-*src/styles/pages* 
+* src/styles/**pages**  
 
 RESPONSIVE File **_global.scss**
 ```scss
