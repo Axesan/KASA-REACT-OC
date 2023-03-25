@@ -10,10 +10,6 @@ File **index.js** contains links for router is pages:
 - Home.js File : *src/pages/Home.js*
 - Apropos.js File : *src/pages/Apropos.js*
 - Notfound.js - (Error 404) File : *src/pages/Notfound.js*
-
-
-
-
 # COMPONENTS
 ## - BANNER
 
@@ -31,7 +27,7 @@ Locate File in 'components/Banner.js'\
     <Banner title='' classPicture='banner-apropos'/>
 </section>
 ```
----
+
 ## - CARD
 Locate File in 'components/Card.js'\
 Components is called :
@@ -44,7 +40,6 @@ Components is called :
 	</div>
   );
 ```
----
 ## - Caroussel 
 Locate File in 'components/Caroussel.js'\
 Components is called :
@@ -59,7 +54,6 @@ return(
 </div>
 );
 ```
----
 ## - DROPDOWN
 Locate File in 'components/Dropdown.js'\
 Components is called :
@@ -75,7 +69,6 @@ return(
       <Dropdown title="Securité" descriptions="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes." numberDropdown={1}/> 
 )
 ```
----
 ## - FOOTER 
 Locate File in 'components/Footer.js'\
 Components is called :
@@ -83,7 +76,6 @@ Components is called :
 // index.js
 <Footer/>
 ```
----
 ## - Navigation 
 Locate File in 'components/Navigation.js'\
 Components is called : 
