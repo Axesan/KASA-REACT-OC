@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Caroussel = (props) => {
-    const { children } = props
-
+    // props children pour les balises image - (A utilisé Si le composant parent ne connais en avance son enfants)
+    const { children } = props;
     const [currentIndex, setCurrentIndex] = useState(0)
     const [length, setLength] = useState(children.length)
 
@@ -31,16 +31,10 @@ const Caroussel = (props) => {
         } else if (currentIndex === 0) {
             setCurrentIndex(prevState => prevState + length - 1)
         }
-
-
-
     }
 
-
-    // Gerer les evenement de balayage.
-
+    // Gerer les évenements de balayage.
     const [touchPosition, setTouchPosition] = useState(null);
-
     const handleTouchStart = (e) => {
         const touchDown = e.touches[0].clientX
         setTouchPosition(touchDown)
@@ -73,9 +67,9 @@ const Caroussel = (props) => {
     return (
         <div className="carousel-container">
             <div className="carousel-wrapper" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
-                {length > 1?
+                {length > 1 ?
                     <FontAwesomeIcon icon={faChevronLeft} className="left-arrow" onClick={prev}  />
-                    :""
+                    : null
                 }
                 <div className="carousel-content-wrapper" >
                     <div className="carousel-content" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>

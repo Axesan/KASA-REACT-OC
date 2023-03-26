@@ -4,12 +4,11 @@ import Dropdown from './../components/Dropdown';
 const Apropos = () => {
    
     return (
-        <div >
-      
+        <div>      
                 <section>
                     <Banner title='' classPicture='banner-apropos'/>
                 </section>
-        <div className="container">
+            <div className="container">
                 <div className="card-apropos">
                     <Dropdown title="Fiabilité" descriptions=" Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes." numberDropdown={1}/>
                 </div>

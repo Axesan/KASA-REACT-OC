@@ -62,10 +62,11 @@ main {
   // Error 404
   .content_not_found {
     h1 {
-      font-size: 188px !important;
+      font-size: 89px !important;
+      
     }
     > span {
-      font-size: 28px !important;
+      font-size: 20px !important;
     }
   }
 
@@ -97,12 +98,13 @@ main {
 }
 
 .infos-logement{
-    flex-direction: column;
+    flex-direction: column !important;
+    width: 100%;
     .card-description{
-        width: 100%;
+        width: 100% !important;
     }
     .card-equipement{
-        width: 100%;
+        width: 100% !important;
         margin-top: 15px;
     }
 }
@@ -128,6 +130,15 @@ padding: 9px 10px !important;
   .carousel-container {
     width: 100% !important;
   }
+
+
+  // carousel 
+
+  .carousel-content {
+    >img{
+      height: 255px !important;
+    }
+  } 
 
   
 }

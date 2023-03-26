@@ -41,6 +41,8 @@ const ViewCard = () => {
        // Show card       
        const NoteUser = rating;
        const star = [regularStarIcone,regularStarIcone,regularStarIcone,regularStarIcone,regularStarIcone]
+       // remplit les premiers éléments du tableau star jusqua Note User 
+       // 0 le remplissage commence du premier elements
        const result = star.fill(solidStarIcone ,0,NoteUser)
    
         
@@ -48,8 +50,7 @@ const ViewCard = () => {
             <div>
                  {/* Carrousel */}
                  <section>
-                    <div>
-                    
+                    <div>                    
                         <Caroussel paginate={ImgCarrousel.length}>
                             {/* BOUCLES SUR LES IMAGES UTILISATION DE FOREACH */}
                             {ImgCarrousel}

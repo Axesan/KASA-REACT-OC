@@ -3,8 +3,7 @@
     color: #FF6060;
 }
 .icon-regular{
-    color:#E3E3E3;
-    
+    color:#E3E3E3;    
 }
 .contend_title_star{
     display: flex;
@@ -91,35 +90,6 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Dropdown 
 
 .fade-in {
@@ -140,52 +110,3 @@
     to { opacity: 0; }
   }
 
-
-
-
-  // Format telephone
-@media only screen and (max-width: 480px) {
-
-
-
-    .contend_title_star{
-        flex-direction: column !important;
-        .badge-tags{
-            .badge-items{
-                min-width: 0;
-            }
-        }
-       
-    }
-
-
-    .bloc_profile{
-        flex-direction: row-reverse !important;
-        justify-content: space-between !important;
-        width: 100% !important;
-        margin-top: 15px;
-        .profile-contend{
-            >span{
-                padding-right: 15px;
-            }
-        }
-       
-
-    }
-
-    .infos-logement{
-        flex-direction: column;
-        .card-description{
-            width: 100%;
-        }
-        .card-equipement{
-            width: 100%;
-            margin-top: 15px;
-        }
-    }
-.badge-items{
-    font-size: 10px !important;
-    padding: 9px 10px !important;
-    
-}
-}

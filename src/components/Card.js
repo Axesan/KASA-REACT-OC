@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-
-
 const Card = (props) => {
     return (
         <Link to={`views/${props.title.replace(/\s/g,"-")}/${props.id}`} className="card_link">
